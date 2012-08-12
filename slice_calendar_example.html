@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+
+	<title>Slice Calendar</title>
+
+	<link rel="stylesheet" media="screen" href="ficheros/CAL_CSS_estilos.css" />
+
+	<script src="ficheros/CAL_JS_jquery-1.7.min.js"></script>
+	<script src="ficheros/CAL_JS_modernizr.js"></script>
+	<script src="jquery.slicecalendar-2.0.js"></script>
+</head>
+<body>
+
+<div id="main">
+
+	<header id="main-header">
+		<div class="inside-area inside-main-header">
+			<h1 class="site-title">Slice Calendar</h1>
+		</div>
+	</header>
+	
+	<div id="core">
+		<div class="inside-area inside-core">
+			
+			<section class="example">
+				<header>
+					<h3 class="title">Inline calendar</h3>
+				</header>
+				
+				<p>Calendar is permanently shown (with no limits):</p>
+				<pre><code>&lt;div class=&quot;calendar-box&quot;&gt;
+
+ [...]
+&lt;/div&gt;</code></pre>
+				<div class="calendar-box">
+					<!-- INLINE CALENDAR -->
+				</div>
+				
+				<p>Calendar is permanently shown (with limits):</p>
+				<pre><code>&lt;div class=&quot;calendar-box&quot; 
+data-min=&quot;2012-04-10&quot;
+data-max=&quot;2012-06-15&quot;&gt;
+  [...]
+&lt;/div&gt;</code></pre>
+				<div class="calendar-box" data-min="2012-04-10" data-max="2012-06-15">
+					<!-- INLINE CALENDAR -->
+				</div>
+				
+				
+			</section>
+			
+			<section class="example">
+				<header>
+					<h3 class="title">Calendar in date type input</h3>
+				</header>
+				<p>Calendar in date type input with no limits (<em>Date 1</em>):</p>
+				<pre><code>&lt;input type=&quot;date&quot; /&gt;</code></pre>
+				<p class="cf"><label for="f_date_01"><span>Date 1:</span><input type="date" id="f_date_01" /></label></p>
+				
+				<p>Calendar in date type input with narrowing of selectable dates (<em>date 2</em>):</p>
+				<pre><code>&lt;input type=&quot;date&quot; min=&quot;2012-11-20&quot; max=&quot;2013-03-21&quot; /&gt;</code></pre>
+				<p class="cf"><label for="f_date_02"><span>Date 2:</span><input type="date" min="2012-11-20" max="2014-03-21" id="f_date_02" /></label></p>
+			</section>
+			
+			<section class="example">
+				<header>
+					<h3 class="title">Calendario in text type input</h3>
+				</header>
+				<p>Calendar in date type input with no limits (<em>Date 3</em>):</p>
+				<pre><code>&lt;input type=&quot;text&quot; /&gt;</code></pre>
+				<p class="cf"><label for="f_date_03"><span>Date 3:</span><input type="text" id="f_date_03" class="date-picker" /></label></p>
+				
+				<p>Calendar in date type input with narrowing of selectable dates (<em>Date 4</em>):</p>
+				<pre><code>&lt;input type=&quot;text&quot; class=&quot;date-picker&quot; <br />data-min=&quot;2012-11-20&quot; data-max=&quot;2014-03-21&quot; /&gt;</code></pre>
+				<p class="cf"><label for="f_date_04"><span>Date 4:</span><input type="text" id="f_date_04" class="date-picker" data-min="2012-11-20" data-max="2014-03-21" /></label></p>
+			</section>
+			
+		</div>
+	</div>
+	
+	<footer id="main-footer">
+		<div class="inside-area inside-main-footer">
+			
+			<h2 class="indented">Document information</h2>
+			
+			
+			<div class="footer-text">
+				<p>&copy; 2012 Antonio Rodríguez</p>
+			</div>
+			
+		</div>
+	</footer>
+
+</div>
+
+</body>
+</html>
