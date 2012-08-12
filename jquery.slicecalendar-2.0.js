@@ -1,65 +1,20 @@
-$(document).ready(function() {
-	
-	// Languages
-	var languageSetting = 'en';
-	var languageValue = $('html').eq(0).attr('lang');
-	if (languageValue) {
-		languageSetting = languageValue;
-	}
-	
-	// Calendar localization
-	var calendarLocale = {
-		'en':{
-				'daysAbbr':['S','M','T','W','T','F','S']
-				,'days':['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
-				,'months':['January','February','March','April','May','June','July','August','September','October','November','December']
-				,'navigationMonths':['Previous month','Next month']
-				,'navigationYears':['Previous year: ','Next year: ']
-				,'closeLink':'Close calendar'
-				,'focusLink':'Open calendar'
-				,'startWeekOnSunday':1
-		}
-		,'es':{
-				'daysAbbr':['L','M','M','J','V','S','D']
-				,'days':['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo']
-				,'months':['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Augosto','Septiembre','Octubre','Noviembre','Diciembre']
-				,'navigationMonths':['Mes anterior','Mes siguiente']
-				,'navigationYears':['Año anterior: ','Año siguiente: ']
-				,'closeLink':'Cerrar calendario'
-				,'focusLink':'Abrir calendario'
-				,'startWeekOnSunday':0
-		}
-		,'fr':{
-				'daysAbbr':['L','M','M','J','V','S','D']
-				,'days':['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche']
-				,'months':['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre']
-				,'navigationMonths':['Mois précédent','Mois suivant']
-				,'navigationYears':['Année précédente: ','Année prochaine: ']
-				,'closeLink':'Fermer calendrier'
-				,'focusLink':'Ouvrir le calendrier'
-				,'startWeekOnSunday':0
-		}
-	}
-	
-	
-	
-	// Call calendar function
-	$.fn.calendar({
-		textNavigationMonths: ['<img src="assets/SL_IMG_navigation_previous.png" alt="'+calendarLocale[languageSetting]['navigationMonths'][0]+': " />','<img src="assets/SL_IMG_navigation_next.png" alt="'+calendarLocale[languageSetting]['navigationMonths'][1]+': " />']
-		,textNavigationYears: [calendarLocale[languageSetting]['navigationYears'][0],calendarLocale[languageSetting]['navigationYears'][1]]
-		,textCloseLink: '<img src="assets/SL_IMG_close.png" alt="'+calendarLocale[languageSetting]['closeLink']+'" />'
-		,textFocusLink: '<img src="assets/SL_IMG_icon_calendar.png" alt="'+calendarLocale[languageSetting]['focusLink']+'" />'
-		,dateWeekdays: calendarLocale[languageSetting]['days']
-		,dateWeekdaysAbbr: calendarLocale[languageSetting]['daysAbbr']
-		,dateMonths: calendarLocale[languageSetting]['months']
-		,startWeekOnSunday: calendarLocale[languageSetting]['startWeekOnSunday']
-	});
-});
+/*
+ * SliceCalendar - jQuery and Underscore plugin for datepicker and calendars
+ *
+ * Copyright (c) 2012 Antonio Rodríguez Ruiz
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Project home:
+ *   http://outbook.es
+ *
+ * Version:  2.0.0
+ *
+ */
 
-
-// Calendar function
 (function($){
-$.fn.calendar = function(options) {
+$.fn.sliceCalendar = function(options) {
 	
 	var defaults = { // Opciones por defecto
 		selectorPlaceCalendar: 'input[type="date"], input.date-picker'
