@@ -1,0 +1,10 @@
+{
+	"daysAbbr": ["L","M","M","J","V","S","D"]
+	,"days": ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"]
+	,"months": ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Augosto","Septiembre","Octubre","Noviembre","Diciembre"]
+	,"navigationMonths": ["Mes anterior","Mes siguiente"]
+	,"navigationYears": ["Año anterior: ","Año siguiente: "]
+	,"closeLink": "Cerrar calendario"
+	,"focusLink": "Abrir calendario"
+	,"startWeekOnSunday": 0
+}

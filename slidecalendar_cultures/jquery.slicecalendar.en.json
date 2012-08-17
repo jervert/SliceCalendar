@@ -1,0 +1,10 @@
+{
+	"daysAbbr": ["S","M","T","W","T","F","S"]
+	,"days": ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+	,"months": ["January","February","March","April","May","June","July","August","September","October","November","December"]
+	,"navigationMonths": ["Previous month","Next month"]
+	,"navigationYears": ["Previous year: ","Next year: "]
+	,"closeLink": "Close calendar"
+	,"focusLink": "Open calendar"
+	,"startWeekOnSunday": 1
+}
